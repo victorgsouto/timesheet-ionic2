@@ -1,0 +1,42 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+
+@import "../pages/page1/page1";
+@import "../pages/page2/page2";
+@import "../pages/page3/page3";
+
+body {
+  background: rgba(74,192,255,1);
+  background: -moz-linear-gradient(-45deg, rgba(74,192,255,1) 0%, rgba(121,91,176,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(74,192,255,1)), color-stop(100%, rgba(121,91,176,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(74,192,255,1) 0%, rgba(121,91,176,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(74,192,255,1) 0%, rgba(121,91,176,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(74,192,255,1) 0%, rgba(121,91,176,1) 100%);
+  background: linear-gradient(135deg, rgba(74,192,255,1) 0%, rgba(121,91,176,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ac0ff', endColorstr='#795bb0', GradientType=1 );
+
+  
+}
+.toolbar-background,
+ion-content,
+tabbar,
+.item {
+	background: transparent;
+}
+
+.toolbar-title, 
+h2, 
+p,
+ion-label,
+.tab-button,
+.item-input ion-label,
+.item {
+	color: #FFF;
+}
+ 

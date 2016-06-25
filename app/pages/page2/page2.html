@@ -1,0 +1,27 @@
+<ion-navbar *navbar>
+    <ion-title>
+        Cadastrar
+    </ion-title>
+</ion-navbar>
+<ion-content class="page2">
+    <ion-list inset>
+        <form #formData='ngForm' (ngSubmit)="onSubmit(formData.value)">
+             
+            <ion-item>
+              <ion-label>Date</ion-label>
+              <ion-datetime ngControl="month" displayFormat="MM/YYYY" pickerFormat="MMMM YYYY" [(ngModel)]="myDate"></ion-datetime>
+            </ion-item>
+
+            <ion-item>
+                <ion-label fixed>Time</ion-label>
+                <ion-input type="tel" ngControl="time"></ion-input>
+            </ion-item>
+            <button block>
+                <ion-icon name="add"></ion-icon>Add</button>
+        </form>
+    </ion-list>
+    <!-- Angular 2 way of doing <p ngShow="myData"> bla bla </p> -->
+    <p *ngIf="myData">
+        You submitted "<strong>{{ myData.mytext }}"</strong>
+    </p>
+</ion-content>
